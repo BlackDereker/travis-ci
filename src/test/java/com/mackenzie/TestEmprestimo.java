@@ -51,7 +51,6 @@ public class TestEmprestimo {
     public void testNegado() {
         boolean resultado = Emprestimo.pedir(900, false, false);
         assertEquals(resultado, false);
-        assertEquals(resultado, true);
     }
 
 }
