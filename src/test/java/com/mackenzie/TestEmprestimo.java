@@ -8,6 +8,12 @@ public class TestEmprestimo {
     public TestEmprestimo() {}
 
     @Test
+    public void testEmprestimo() {
+        Emprestimo emprestimo = new Emprestimo();
+        assertNotNull(emprestimo);
+    }
+
+    @Test
     public void testSaldoMaior() {
         boolean resultado = Emprestimo.pedir(1500, false, false);
         boolean resultado1 = Emprestimo.pedir(1500, true, false);
