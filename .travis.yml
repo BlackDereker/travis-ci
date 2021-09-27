@@ -3,6 +3,10 @@ language: java
 jdk: oraclejdk16
 
 
+env:
+  global:
+    - CODECOV_TOKEN=$CODECOV_TOKEN
+
 # Caso o build aconteca corretamente a analise de cobertura de teste e disparada
 after_success:
   - bash <(curl -s https://codecov.io/bash)
